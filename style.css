@@ -112,6 +112,7 @@ ol {
 
 blockquote {
   margin: 0;
+  margin-left: 42px;
   padding: 0 0 0 20px 22px;
   font-style: italic;
 }
