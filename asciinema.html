@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>asciinema</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="asciinema"><h1 id="asciinema">asciinema</h1></div>
+
+<ul>
+<li>
+Make a new recording and save it to a local file
+<pre bash>
+    asciinema rec path/to/file.cast
+</pre>
+
+<li>
+Replay a terminal recording from a local file
+<pre bash>
+    asciinema play path/to/file.cast
+</pre>
+
+<li>
+Make a new recording, limiting any idle time to at most 2.5 seconds
+<pre bash>
+    asciinema rec -i 2.5
+</pre>
+
+<li>
+Print the full output of a locally saved recording
+<pre bash>
+    asciinema cat path/to/file.cast
+</pre>
+
+<li>
+Reattach and start recording a detached tmux session
+<pre bash>
+    asciinema rec /path/to/file.cast -c "tmux a -t {session_name}"
+
+    # Detach the tmux session to finish the recording.
+</pre>
+
+</ul>
+
+</body>
+</html>
